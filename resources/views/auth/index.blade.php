@@ -16,5 +16,6 @@
                 <a href="@yield('register')" class="btn btn-default pull-right">Register</a>
             </div>
         </form>
+        <a href="@yield('password')">Forgotten password?</a>
     </div>
 @endsection

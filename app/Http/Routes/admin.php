@@ -31,3 +31,18 @@ Route::post('register', [
     'uses' => 'AuthController@postRegister',
     'as' => 'admin.auth.register',
 ]);
+
+Route::get('password/reset/{token?}', [
+    'uses' => 'PasswordController@showResetForm',
+    'as' => 'admin.password.reset',
+]);
+
+Route::post('password/reset', [
+    'uses' => 'PasswordController@reset',
+    'as' => 'admin.password.reset',
+]);
+
+Route::post('password/email', [
+    'uses' => 'PasswordController@sendResetLinkEmail',
+    'as' => 'admin.password.email',
+]);

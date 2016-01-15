@@ -1,7 +1,7 @@
 {
     "name": "gregoryduckworth/laravel-multi-auth",
     "description": "Multi-Auth Template for Laravel 5.2.",
-    "keywords": ["framework", "laravel", "multi", "auth"],
+    "keywords": ["laravel", "multi", "auth"],
     "license": "MIT",
     "type": "project",
     "require": {

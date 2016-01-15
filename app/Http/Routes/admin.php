@@ -21,3 +21,13 @@ Route::get('logout', [
     'uses' => 'AuthController@logout',
     'as' => 'admin.auth.logout',
 ]);
+
+Route::get('register', [
+    'uses' => 'AuthController@getRegister',
+    'as' => 'admin.auth.register',
+]);
+
+Route::post('register', [
+    'uses' => 'AuthController@postRegister',
+    'as' => 'admin.auth.register',
+]);

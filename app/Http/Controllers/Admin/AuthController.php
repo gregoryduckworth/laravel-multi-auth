@@ -43,11 +43,11 @@ class AuthController extends Controller
 
     public function index()
     {
-        return view('admin.auth');
+        return view('admin.auth.auth');
     }
 
     public function getRegister()
     {
-        return view('admin.register');
+        return view('admin.auth.register');
     }
 }

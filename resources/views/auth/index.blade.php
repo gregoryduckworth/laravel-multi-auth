@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.frontend.master')
 
 @section('body')
     <div class="col-md-4 col-md-offset-4 text-center">

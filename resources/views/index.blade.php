@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.frontend.master')
 
 @section('body')
 

@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\Models\User as User;
+use App\Models\User;
 
 class Admin extends User
 {

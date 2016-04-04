@@ -5,7 +5,19 @@ use Illuminate\Database\Schema\Blueprint;
 
 class CreateUsersTables extends Migration
 {
+    // Both Admin and User tables
     protected $tables = ['admins', 'users'];
+
+    /**
+     * Add the ability to run certain functions
+     * on multiple tables
+     */
+    protected function eachTable(Closure $action)
+    {
+        foreach ($this->tables as $table) {
+            $action($table);
+        }
+    }
 
     /**
      * Run the migrations.
@@ -36,12 +48,5 @@ class CreateUsersTables extends Migration
         $this->eachTable(function ($table) {
             Schema::drop($table);
         });
-    }
-
-    protected function eachTable(Closure $action)
-    {
-        foreach ($this->tables as $table) {
-            $action($table);
-        }
     }
 }

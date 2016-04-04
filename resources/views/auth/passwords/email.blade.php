@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.frontend.master')
 
 <!-- Main Content -->
 @section('body')
